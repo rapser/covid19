@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,15 @@
 		46E4BA542437F165006101FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E4BA522437F165006101FE /* Main.storyboard */; };
 		46E4BA562437F16A006101FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E4BA552437F16A006101FE /* Assets.xcassets */; };
 		46E4BA592437F16A006101FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E4BA572437F16A006101FE /* LaunchScreen.storyboard */; };
+		46E4BA612437F657006101FE /* covid.json in Resources */ = {isa = PBXBuildFile; fileRef = 46E4BA602437F657006101FE /* covid.json */; };
+		46E4BA632437FE5C006101FE /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E4BA622437FE5C006101FE /* Covid.swift */; };
+		5828D004821570D100255816 /* Pods_mapacovid19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672280D040E63C2EEB4F798 /* Pods_mapacovid19.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46E4BA492437F165006101FE /* mapacovid19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapacovid19.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5582CDEB164A68E372DF21 /* Pods-mapacovid19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapacovid19.release.xcconfig"; path = "Target Support Files/Pods-mapacovid19/Pods-mapacovid19.release.xcconfig"; sourceTree = "<group>"; };
+		3672280D040E63C2EEB4F798 /* Pods_mapacovid19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapacovid19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E4BA492437F165006101FE /* covid19peru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covid19peru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E4BA4C2437F165006101FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E4BA4E2437F165006101FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46E4BA502437F165006101FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		46E4BA552437F16A006101FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46E4BA582437F16A006101FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46E4BA5A2437F16A006101FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E4BA602437F657006101FE /* covid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covid.json; sourceTree = "<group>"; };
+		46E4BA622437FE5C006101FE /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		5FFB200E75C24700BD93BADB /* Pods-mapacovid19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapacovid19.debug.xcconfig"; path = "Target Support Files/Pods-mapacovid19/Pods-mapacovid19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +39,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5828D004821570D100255816 /* Pods_mapacovid19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16BDA504604F674CE65BF75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FFB200E75C24700BD93BADB /* Pods-mapacovid19.debug.xcconfig */,
+				1B5582CDEB164A68E372DF21 /* Pods-mapacovid19.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		46E4BA402437F165006101FE = {
 			isa = PBXGroup;
 			children = (
 				46E4BA4B2437F165006101FE /* mapacovid19 */,
 				46E4BA4A2437F165006101FE /* Products */,
+				16BDA504604F674CE65BF75F /* Pods */,
+				E3E9DD19029C5A61E514BD4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		46E4BA4A2437F165006101FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46E4BA492437F165006101FE /* mapacovid19.app */,
+				46E4BA492437F165006101FE /* covid19peru.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +76,7 @@
 		46E4BA4B2437F165006101FE /* mapacovid19 */ = {
 			isa = PBXGroup;
 			children = (
+				46E4BA602437F657006101FE /* covid.json */,
 				46E4BA4C2437F165006101FE /* AppDelegate.swift */,
 				46E4BA4E2437F165006101FE /* SceneDelegate.swift */,
 				46E4BA502437F165006101FE /* ViewController.swift */,
@@ -63,8 +84,17 @@
 				46E4BA552437F16A006101FE /* Assets.xcassets */,
 				46E4BA572437F16A006101FE /* LaunchScreen.storyboard */,
 				46E4BA5A2437F16A006101FE /* Info.plist */,
+				46E4BA622437FE5C006101FE /* Covid.swift */,
 			);
 			path = mapacovid19;
+			sourceTree = "<group>";
+		};
+		E3E9DD19029C5A61E514BD4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3672280D040E63C2EEB4F798 /* Pods_mapacovid19.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46E4BA5D2437F16A006101FE /* Build configuration list for PBXNativeTarget "mapacovid19" */;
 			buildPhases = (
+				E197F38788B48EEBE06070D2 /* [CP] Check Pods Manifest.lock */,
 				46E4BA452437F165006101FE /* Sources */,
 				46E4BA462437F165006101FE /* Frameworks */,
 				46E4BA472437F165006101FE /* Resources */,
+				FA53909925D6A9B8D3B895B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,7 +116,7 @@
 			);
 			name = mapacovid19;
 			productName = mapacovid19;
-			productReference = 46E4BA492437F165006101FE /* mapacovid19.app */;
+			productReference = 46E4BA492437F165006101FE /* covid19peru.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,10 +160,53 @@
 				46E4BA592437F16A006101FE /* LaunchScreen.storyboard in Resources */,
 				46E4BA562437F16A006101FE /* Assets.xcassets in Resources */,
 				46E4BA542437F165006101FE /* Main.storyboard in Resources */,
+				46E4BA612437F657006101FE /* covid.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E197F38788B48EEBE06070D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mapacovid19-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA53909925D6A9B8D3B895B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapacovid19/Pods-mapacovid19-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapacovid19/Pods-mapacovid19-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapacovid19/Pods-mapacovid19-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46E4BA452437F165006101FE /* Sources */ = {
@@ -141,6 +216,7 @@
 				46E4BA512437F165006101FE /* ViewController.swift in Sources */,
 				46E4BA4D2437F165006101FE /* AppDelegate.swift in Sources */,
 				46E4BA4F2437F165006101FE /* SceneDelegate.swift in Sources */,
+				46E4BA632437FE5C006101FE /* Covid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +358,20 @@
 		};
 		46E4BA5E2437F16A006101FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFB200E75C24700BD93BADB /* Pods-mapacovid19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
 				INFOPLIST_FILE = mapacovid19/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rapser.mapacovid19;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapser.covid19;
+				PRODUCT_NAME = covid19peru;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +379,20 @@
 		};
 		46E4BA5F2437F16A006101FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5582CDEB164A68E372DF21 /* Pods-mapacovid19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
 				INFOPLIST_FILE = mapacovid19/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rapser.mapacovid19;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapser.covid19;
+				PRODUCT_NAME = covid19peru;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

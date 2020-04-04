@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Covid: Codable {
+    var title, description: String
+    var lat, lon: Double
+    var ubigeo: Int
+}
