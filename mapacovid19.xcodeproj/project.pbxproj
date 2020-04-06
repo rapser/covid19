@@ -82,8 +82,6 @@
 		46E4BA4B2437F165006101FE /* mapacovid19 */ = {
 			isa = PBXGroup;
 			children = (
-				46E4BA702438DF8F006101FE /* covid.geojson */,
-				46E4BA602437F657006101FE /* covid.json */,
 				46E4BA6424386774006101FE /* App */,
 				46E4BA68243867A3006101FE /* Models */,
 				46E4BA6524386784006101FE /* Controller */,
@@ -141,6 +139,8 @@
 		46E4BA69243867B5006101FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46E4BA702438DF8F006101FE /* covid.geojson */,
+				46E4BA602437F657006101FE /* covid.json */,
 				46E4BA5A2437F16A006101FE /* Info.plist */,
 			);
 			path = Resources;

@@ -23,7 +23,7 @@ class MapBoxViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "covid19 Perú"
+        title = "Covid19 Perú"
         setupMap()
     }
     
