@@ -8,5 +8,6 @@ target 'mapacovid19' do
   # Pods for mapacovid19
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Mapbox-iOS-SDK', '~> 5.7'
 
 end
